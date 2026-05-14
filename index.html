@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSUN Map Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <h2>CSUN Location Guessing Game</h2>
+    
+    <div class="main-container">
+        <div id="map"></div>
+    
+        <div class="ui-panel">
+            <div id="location-question"></div>
+            
+            <div id="result"></div>
+
+            <div id="timer-box">
+                <h3>Timer</h3>
+                <div id="timer">00:00:00</div>
+            </div>
+
+            <div id="score-box">
+                <h3>Fastest Scores</h3>
+                <ol id="top-scores"></ol>
+            </div>
+        </div>
+    </div> 
+
+    <script src="script.js"></script>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHJU3Q6E8po0Z-XfqW64i9qpZYEWuV4Kk&callback=initMap"
+      async defer
+    ></script>
+</body>
+</html>
